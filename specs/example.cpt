@@ -1,0 +1,73 @@
+Created by testinium on 23.05.2022
+
+This is a concept file with following syntax for each concept.
+
+# Sayfaya gir ve kontrol et
+* "3" kadar bekle
+* Elementi "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tv_startShoppingStore']" bul ve "ALIŞVERİŞE BAŞLA" değerini kontrol et
+* "6" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tv_startShoppingStore']" xpath'li elemente tıkla
+* "6" kadar bekle
+* Elementi "//*[@text='Mağaza']" bul ve "Mağaza" değerini kontrol et
+* "6" kadar bekle
+
+# Kategorilere gir ve kontrol et
+* "3" kadar bekle
+* "com.ozdilek.ozdilekteyim:id/nav_categories" İd'li elemente tıkla
+* "6" kadar bekle
+* Elementi "//*[@text='Kategoriler']" bul ve "Kategoriler" değerini kontrol et
+* "6" kadar bekle
+
+# Kategoriler sayfasından kadın seçilir ve pantolona tıklanır
+* "3" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/relLayCategoriesItem'][2]" xpath'li elemente tıkla
+* "6" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/relLayCategoriesItem'][10]" xpath'li elemente tıkla
+* "6" kadar bekle
+
+# Sayfa iki kez aşağı kaydırılır
+* "3" kadar bekle
+* Sayfayı yukarı kaydır
+* "3" kadar bekle
+* Sayfayı yukarı kaydır
+* "6" kadar bekle
+
+# Ürünlerden rasgele bir ürün seçilir ve seçildiği kontrol edilir
+* "3" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerView']/*[@class='androidx.cardview.widget.CardView'][3]" xpath'li elemente tıkla
+* "6" kadar bekle
+* Elementi "//*[@text='SEPETE EKLE']" bul ve "SEPETE EKLE" değerini kontrol et
+* "6" kadar bekle
+
+# Favoriler butonuna tıklanır
+* "3" kadar bekle
+* "com.ozdilek.ozdilekteyim:id/relLayAddFav" İd'li elemente tıkla
+* "6" kadar bekle
+
+# Giriş yapma ekranı açıldığı doğrulanır
+* "3" kadar bekle
+* Elementi "//*[@text='Giriş Yap']" bul ve "Giriş Yap" değerini kontrol et
+* "6" kadar bekle
+
+# Kullanıcı adı ve şifre girilir
+* "3" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/etEposta']" xpath'li elemente "hilal.calislar@testinium.com" değerini yaz
+* "6" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/etPassword']" xpath'li elemente "1q2w3e4r5t" değerini yaz
+* "6" kadar bekle
+
+# İki kere geri tuşuna basılır
+* "3" kadar bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "6" kadar bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "6" kadar bekle
+
+# Sayfa yukarı kaldırılır ve rasgele bir ürün seçilip sepete eklenir
+* "3" kadar bekle
+* Sayfayı yukarı kaydır
+* "3" kadar bekle
+* "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerView']/*[@class='androidx.cardview.widget.CardView'][4]" xpath'li elemente tıkla
+* "6" kadar bekle
+* "com.ozdilek.ozdilekteyim:id/relLayAddCartBtn" İd'li elemente tıkla
+
